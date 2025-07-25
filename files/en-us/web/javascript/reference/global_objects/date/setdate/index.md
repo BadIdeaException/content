@@ -45,7 +45,7 @@ Changes the {{jsxref("Date")}} object in place, and returns its new [timestamp](
 
 If you specify a number outside the expected range, the date information in the {{jsxref("Date")}} object is updated accordingly. For example, if the `Date` object holds June 1st, a `dateValue` of 40 changes the date to July 10th, while a `dateValue` of 0 changes the date to the last day of the previous month, May 31st.
 
-If the update moves the target date over a net timezone shift (e.g. over the beginning or end of Daylight Savings Time), `setDate` preserves local time: the hours value will be the same before and after the update. By extension, this means that the net difference between the new and the old timestamp may vary. If you need to shift a date by a fixed amount of time, use {{jsxref("Date#setUTCDate")}} instead.
+If the update moves the target date over a net timezone shift (e.g. over the beginning or end of Daylight Savings Time), `setDate` preserves local time: the hours value will be the same before and after the update. By extension, this means that the net difference between the new and the old timestamp may vary. If you need to shift a date by a fixed amount of time, use {{{jsxref("Date.prototype.setUTCDate()")}} instead.
 
 ## Examples
 
